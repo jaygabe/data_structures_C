@@ -2,7 +2,7 @@
 
 ## What is Recursion?
 
-Recursion is a function that calls itself. Inside this function, there must be a condition that stops the recursive function from calling itself which we call the "base case" and ensures the recursive functions STOPS/TERMINATES. 
+Recursion is a function that calls itself. Inside this function, there must be a condition that stops the recursive function from calling itself which we call the "base case" and ensures the recursive functions STOPS/TERMINATES.
 
 Without this base case, the recursive function may run forever or exceed the call stack leading to errors.
 
@@ -14,6 +14,12 @@ When you trace a recursive function, you are essentially examining the sequence 
 
 ## Stack Used in Recursion
 
+When you start a new process, the process will create a space in memory for the code, the stack, and the heap. A stack is commonly used in recursion to keep track of function calls and their local variables.
+
+As the program begins executing from the main function,
+
+For more information about how each process contains code, a stack, and heap memory, visit this course series: // TODO: Add course
+
 ## Time Complexity
 
-## 
+##
