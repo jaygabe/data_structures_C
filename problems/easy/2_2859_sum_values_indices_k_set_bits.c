@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int countBits(int num)
+int countSetBits(int num)
 {
     // Initialize the number of set bits to 0
     int count = 0;
@@ -25,7 +25,7 @@ int sumIndicesWithKSetBits(int* nums, int numsSize, int k)
     for (int i = 0; i < numsSize; i++)
     {
         // CHECK: If the number of set bits equals k
-        if (countBits(i) == k)
+        if (countSetBits(i) == k)
         {
             // Add the value of the current element to the total
             total += nums[i];
