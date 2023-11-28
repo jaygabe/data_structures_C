@@ -6,13 +6,22 @@ struct ListNode {
     struct ListNode *next;
 };
 
+// Time Complexity: O(log(min(a, b)))
+// Find the GCD of two integers
 int gcd(int a, int b) {
+    // declare remainder
     int r;
+    // While the remainder of a and b
+    // is greater than 0
     while((a % b) > 0) {
+        // Find the remainder
         r = a % b;
+        // Store the value of b in a
         a = b;
+        // Store the value of the remainder in b
         b = r;
     }
+    // Return the final remainder
     return b;
 }
 

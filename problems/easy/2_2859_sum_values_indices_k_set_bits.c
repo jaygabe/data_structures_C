@@ -6,7 +6,8 @@ int countSetBits(int num)
     int count = 0;
     // Iterate over the binary representation of the num
     // number passed into the function
-    while (num) {
+    while (num) 
+    {
         // If the least significant bit is a 1
         // Add 1 to our count
         count += num & 1;
