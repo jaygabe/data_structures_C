@@ -47,29 +47,29 @@ struct ListNode* insertGreatestCommonDivisors(struct ListNode* head)
     if(head == NULL || head->next == NULL) return head;
 
     // Create a reference to the head node we were given
-    struct ListNode *curr = head;
+    struct ListNode *current = head;
     // Create a reference to what will become the next node
     struct ListNode *next = NULL;
 
-    // While there is a node at our current node
+    // While there is a node at our currentent node
     // and there is a node at the next node position
-    while(curr != NULL && curr->next != NULL) 
+    while(current != NULL && current->next != NULL) 
     {
-        // Store the node that comes after current node
+        // Store the node that comes after currentent node
         // in our next variable
-        next = curr->next;
+        next = current->next;
 
         // Find out what the GCD of our current and next node is
-        int div = gcd(curr->val, curr->next->val);
+        int div = gcd(current->val, current->next->val);
         // Use that GCD to create a brand new node
         // We will place this between current and next nodes
-        struct ListNode *temp = createNode(div);
-        // Point the temp->next pointer to our next node
-        temp->next = curr->next;
-        // Point our curr->next pointer to our temp node
-        curr->next = temp;
+        struct ListNode *insertNode = createNode(div);
+        // Point the insertNode->next pointer to our next node
+        insertNode->next = current->next;
+        // Point our current->next pointer to our insertNode node
+        current->next = insertNode;
         // Move current to our next node
-        curr = next;
+        current = next;
     } 
 
     return head;
