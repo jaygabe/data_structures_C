@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/omesa/automateearth/algorithms/data_structures_C/concepts/recursion",
-      "program": "c:/Users/omesa/automateearth/algorithms/data_structures_C/concepts/recursion/build/Debug/outDebug",
+      "cwd": "c:/Users/jim/projects/dsa/DSA_competitive/problems/hard",
+      "program": "c:/Users/jim/projects/dsa/DSA_competitive/problems/hard/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
