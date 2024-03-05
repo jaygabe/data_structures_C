@@ -68,15 +68,15 @@ int findMaximumLength(int* A, int ASize) {
 }
 
 int main() {
-    // // Test case 1
-    // int nums1[] = {5, 2, 2};
-    // int size1 = sizeof(nums1) / sizeof(nums1[0]);
-    // printf("Test Case 1: %d\n", findMaximumLength(nums1, size1));
+    // Test case 1
+    int nums1[] = {5, 2, 2};
+    int size1 = sizeof(nums1) / sizeof(nums1[0]);
+    printf("Test Case 1: %d\n", findMaximumLength(nums1, size1));
 
-    // // Test case 2
-    // int nums2[] = {1, 2, 3, 4};
-    // int size2 = sizeof(nums2) / sizeof(nums2[0]);
-    // printf("Test Case 2: %d\n", findMaximumLength(nums2, size2));
+    // Test case 2
+    int nums2[] = {1, 2, 3, 4};
+    int size2 = sizeof(nums2) / sizeof(nums2[0]);
+    printf("Test Case 2: %d\n", findMaximumLength(nums2, size2));
 
     // Test case 3
     int nums3[] = {4, 3, 2, 6};
